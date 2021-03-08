@@ -9,6 +9,8 @@ The derivative of a function measures the rate of change of the function with re
 
 ### One Dimentional Funtions
 A 1D image can be seen as a row of some pixels, such as the following: 
+<br />
+<br />
 <img src="images/1d_image1.png" width="500" >
 
 
@@ -31,11 +33,13 @@ Applying the above method on our 1D digital image yields:
 
 For multivariable functions, partial derivative measures the rate of change with respect to each of the independent variables. It is also referred to as the gradient of the function. The gradient of a 2D image <img src="https://latex.codecogs.com/gif.latex?\bg_white&space;I(x,y)" /> is formed by combining the partial derivatives of the image in the <img src="https://latex.codecogs.com/gif.latex?\bg_white&space;x" /> direction and <img src="https://latex.codecogs.com/gif.latex?\bg_white&space;y" /> directions as:
 <br />
+<br />
 <img src="https://latex.codecogs.com/gif.latex?\bg_white&space;\nabla&space;I(x,y)=\left&space;[&space;\frac{\partial&space;I(x,y)}{\partial&space;x},&space;\frac{\partial&space;I(x,y)}{\partial&space;y}\right&space;]" />
 <br />
 
 <img src="https://latex.codecogs.com/gif.latex?\bg_white&space;\frac{\partial&space;I(x,y)}{\partial&space;x}" /> measures the rate of change of pixel intensity in the <img src="https://latex.codecogs.com/gif.latex?\bg_white&space;x" /> direction and it is approximated as:
 
+<br />
 <br />
 
 <img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;I(x,y)}{\partial&space;x}\approx&space;\frac{I(x&plus;&space;0.5&space;\Delta&space;x,y)&space;-&space;I(x-0.5&space;\Delta&space;x,y)}{\Delta&space;x}" />
@@ -45,6 +49,7 @@ For multivariable functions, partial derivative measures the rate of change with
 
 and <img src="https://latex.codecogs.com/gif.latex?\bg_white&space;\frac{\partial&space;I(x,y)}{\partial&space;y}" /> measures the rate of change of pixel intensity in the <img src="https://latex.codecogs.com/gif.latex?\bg_white&space;y" /> direction and it is approximated as:
 
+<br />
 <br />
 
 <img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;I(x,y)}{\partial&space;x}\approx&space;\frac{I(x,&space;y&plus;&space;0.5&space;\Delta&space;y)&space;-&space;I(x,y&space;-0.5&space;\Delta&space;y)}{\Delta&space;y}" />
@@ -60,11 +65,12 @@ When convolving a grayscale image with the <img src="https://latex.codecogs.com/
 
 For each corresponding pixel position of those feature images, we can calculate the gradient magnitude and its direction.
 <br />
+<br />
 <img src="https://latex.codecogs.com/gif.latex?\bg_white&space;\left&space;\|&space;\nabla&space;I&space;\right&space;\|=\sqrt{\frac{\partial&space;I^2}{\partial&space;x}&plus;\frac{\partial&space;I^2}{\partial&space;y}}" />         
 
 <br />
 The magnitude is the amount of intensity change at a given pixel. The higher the value, the higher the change. As we shall see in the implementation section in this post, the magnitude is used to detect edges in the image. 
-
+<br />
 <br />
 <img src="https://latex.codecogs.com/gif.latex?\bg_white&space;\theta=atan(\frac{\partial&space;I}{\partial&space;y}/\frac{\partial&space;I}{\partial&space;x})" />
 
