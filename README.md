@@ -5,7 +5,7 @@ In this post, we are going to explain what it really means to find the derivativ
 <br />
 
 ## Image Gradient 
-The derivative of a function measures the rate of change of the function with respect to its independent variable. It is also referred to like the slop of the function. Functions can be continuous or discrete. A digital image is an example of 2D discrete functions. 
+The derivative of a function measures the rate of change of the function with respect to its independent variable. It is also referred to as the slop of the function. Functions can be continuous or discrete. A digital image is an example of 2D discrete functions. 
 
 ### One Dimentional Funtions
 A 1D image can be seen as a row of some pixels, such as the following: 
@@ -17,6 +17,7 @@ A 1D image can be seen as a row of some pixels, such as the following:
 These discrete values represent the color intensity and the derivative of the entire row represents the intensity change as we move from one pixel to another. 
 
 Among the methods that are used to approximate the first derivative of a discrete function, the central finite difference gives the best results:
+<br />
 <br />
 <img src="https://latex.codecogs.com/gif.latex?\bg_white&space;\large&space;{f'(x)}\approx\frac{f(x&plus;0.5h)&space;-&space;f(x-0.5h)}{h}" />
 
