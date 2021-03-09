@@ -1,10 +1,6 @@
 import cv2
 import numpy as np
 
-from matplotlib import pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-
-
 def grayscale_image(image):
   # convert to grayscale 
   gray_image = np.zeros((image.shape[0],image.shape[1]),np.uint8)
